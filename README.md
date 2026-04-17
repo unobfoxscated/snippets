@@ -1,2 +1,2 @@
-# Add a README
-Help people interested in this repository understand your project.
+# self explanatory
+most of this is probably useless to you, or maybe useful, who knows
