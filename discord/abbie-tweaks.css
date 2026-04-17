@@ -1,3 +1,5 @@
+/* credit: abbie (lost source) */
+
 @container style(--\\--compact-title-bar: true) {
 	body {
 		--custom-app-top-bar-height: 28px;
