@@ -1,2 +1,1 @@
-# self explanatory
-most of this is probably useless to you, or maybe useful, who knows
+### snippets and themes i just archived for personal use, everything is credited respectfully
