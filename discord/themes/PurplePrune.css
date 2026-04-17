@@ -1,0 +1,29 @@
+/**
+ * @name PurplePrune
+ * @author computer-catt
+ * @description A simple thorough theme
+ * @version 0.1.5
+ */
+
+@import url(https://raw.githubusercontent.com/Benzeel/Bennys-Css-Snippets/refs/heads/main/TransparentMessagebox.css);
+@import url(https://raw.githubusercontent.com/computer-catt/PurplePrune/main/blur.css);
+@import url(https://raw.githubusercontent.com/computer-catt/PurplePrune/main/base.css);
+
+/* PurplePrune config header */
+:root, .theme-dark {
+  /* Theme Background and its properties*/
+  --theme-background-image: url("https://github.com/computer-catt/PurplePrune/blob/main/Assets/NightTheme.webp?raw=true") repeat-x center / auto 100%;;
+  /*--theme-background-image: none;*/
+  
+  /* background tint*/
+  --window-tint: #0005;
+  
+  --blur-strength: 4px; /* Use base theme to fully disable */
+  
+  /* Unthemed popouts color*/
+  --ProfilePopoutTint: #0006;
+  
+  /* Transparent messagebox options */
+  --tm-enable: 1; /* 0 disables */
+  --tm-blur: var(--blur-strength); /* configure blur here */
+}
