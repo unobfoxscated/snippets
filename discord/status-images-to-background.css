@@ -1,0 +1,35 @@
+/* credit: Blade0 @ https://discord.com/channels/1015060230222131221/1028106818368589824/1490681889105776801 */
+
+[class*="overlay_"][class*="card__"] { 
+  overflow: hidden;
+  [class*="imagePosition_"],
+  [class*="imageContainer_"]:not(svg) {
+    display: contents;
+    [class*="contentImage__"] {
+      position: absolute;
+      top: -4px !important; left: -4px;
+      width: calc(100% + 8px); height: calc(100% + 8px); max-width: unset !important;
+      mask-image: linear-gradient(165deg, black, transparent);
+      opacity: 0.5;
+      filter: blur(2px);
+    }
+  }
+  [class*="imageContainer_"] {
+    position: absolute;
+    top: -4px !important; left: -4px;
+    width: calc(100% + 8px); height: calc(100% + 8px);
+    contain: none !important;
+    mask: none;
+    >foreignObject {
+      mask: none !important;
+      contain: none !important;
+      width: 200px !important;
+      x: -70;
+    }
+  }
+  [class*="header__"] {
+    position: absolute;
+    right: var(--space-xs);
+    [class*="headerText__"] { display: none; }
+  }
+}
