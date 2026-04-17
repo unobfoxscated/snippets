@@ -1,0 +1,50 @@
+/* credit: dav @ https://discord.com/channels/1015060230222131221/1028106818368589824/1487216375696195616 */
+
+[class*="messageContent_"], [class*="compact_"] [class*="contents_"] { position: unset !important }
+.obscured.obscured {
+  --__current--spoiler-content-opacity: 1;
+  &.hidden__299eb > span {
+    visibility: hidden;
+  }
+}
+.mention, [class*="roleMention__"] {
+  position: unset;
+  filter: none;
+}
+[class*="mentioned__"] .interactive:is([class*="roleMention__"], .mention) {
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    background-color: var(--icon-feedback-warning);
+    filter: saturate(var(--saturation-factor,1));
+    pointer-events: none;
+    visibility: visible;
+  }
+  &[style]:before, &[style]:after {
+    background-color: currentColor !important;
+  }
+}
+[class*="mentioned__"] .interactive:is([class*="roleMention__"], .mention):before {
+  top: 0; left: 0; bottom: 0;
+  width: 2px;
+}
+[class*="mentioned__"] .interactive:is([class*="roleMention__"], .mention):after {
+  border-radius: 0 var(--radius-xs) var(--radius-xs) 0;
+  inset: 0;
+  opacity: 8%;
+  z-index: -1;
+}
+.interactive:is([class*="roleMention__"], .mention) ~ .interactive, .interactive:is([class*="roleMention__"], .mention) ~ .obscured .interactive, .obscured:has(.interactive) ~ .interactive, .obscured:has(.interactive) ~ .obscured .interactive, [class*="repliedTextPreview_"] .interactive {
+  &:before, &:after {
+    content: unset;
+  }
+}
+[class*="mentioned__"]:has([class*="contents_"] .interactive:is([class*="roleMention__"], .mention)) {
+  background: none !important;
+  z-index: 0;
+  &:hover, &.selected__5126c {
+    .mention:after, [class*="roleMention__"]:after {
+      opacity: 4%;
+    }
+  }
+}
