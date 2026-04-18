@@ -1,1 +1,1 @@
-"root" are attached to css of same name, don't @import them
+stuff that basically does everything, not recommended to mix with many other things
