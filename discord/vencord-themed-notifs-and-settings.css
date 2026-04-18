@@ -1,0 +1,22 @@
+/*credit: Benny @ https://discord.com/channels/1015060230222131221/1028106818368589824/1472384460157747221 */
+
+/* theme vencord update notification by Benzeel V1 */
+.vc-notification-root {
+  background: #8d063a46;
+  backdrop-filter: blur(40px);
+  border: 2px solid #b32b5838;
+  filter: drop-shadow(0px 3px 8px #000000);
+  transition: 0.5s ease;
+}
+.vc-notification-root:hover {
+  background: #c5084765;
+  border: 2px solid #b80d46a6;
+  transition: 0.3s ease;
+  transform: scale(99%) translateY(2%)  ;
+}
+.root__49fc1:has(.vc-settings-modal) {
+  border: 2px solid #df1256c5;
+  background: #c71e571e;
+  backdrop-filter: blur(50px);
+  transition: 0.1s ease;
+}
