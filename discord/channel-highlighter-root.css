@@ -1,0 +1,10 @@
+:root {
+  /*---===< CHANNEL HIGHLIGHTER AND SPACER >===---*/
+  --chs-color-1: hsla(277, 59%, 76%, 0.30);
+  --chs-color-2: hsla(316, 73%, 84%, 0.30);
+  --chs-icon-hover: hsl(267, 84%, 81%);
+  --chs-icon-scale: 0.9;
+  --chs-channel-spacing: 1px;
+  --chs-channel-size: 1px;
+  --chs-channel-selected: linear-gradient(40deg, var(--chs-color-1) 30%, var(--chs-color-2));
+}
