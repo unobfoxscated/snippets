@@ -1,0 +1,6 @@
+/*credit: Julienraptor01 @ https://discord.com/channels/1015060230222131221/1028106818368589824/1470102304014467247 */
+
+[class^=powerupContainer] {
+    display: flex;
+    > :not([class^=parentContainer]) { display: none; }
+}
